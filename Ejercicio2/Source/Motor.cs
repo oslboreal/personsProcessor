@@ -18,11 +18,7 @@ namespace Ejercicio2.Source
         static public int textToPerson(List<string> peopleCollection)
         {
             int iret = 0;
-            var collection = peopleString.Split(';');
-            foreach (var item in collection)
-            {
-
-            }
+            
             return iret;
         }
     }

@@ -32,17 +32,6 @@ namespace Ejercicio2
         }
 
         /// <summary>
-        /// Método encargado de corroborar que no se repita ningún cuit en la lista, en caso de repetirse, elimina el elemento de la lista
-        /// </summary>
-        /// <returns>int : Contador indicando la cantidad de elementos repetidos.</returns>
-        public int eraseRepeatedCuits()
-        {
-            int iret = 0;
-
-            return iret;
-        }
-
-        /// <summary>
         /// Corrobora que el Archivo en cuestión exista.
         /// </summary>
         /// <returns></returns>
@@ -56,12 +45,11 @@ namespace Ejercicio2
         /// </summary>
         /// <param name="filePath"></param>
         /// <returns>Cadena de caracteres con el contenido del fichero.</returns>
-        public string readFile(string filePath)
+        public string[] readFile(string filePath)
         {
-            string sret;
             if(checkFileExists(filePath))
             {
-                sret = File.ReadAllText(filePath);
+                var sret = File.ReadAllLines(filePath);
                 return sret;
             }else
             {
@@ -81,7 +69,7 @@ namespace Ejercicio2
             if(checkFileExists(filePath))
             {
                 File.WriteAllText(filePath, fileContent);
-                if(this.readFile(filePath) == fileContent)
+                if(File.ReadAllText(filePath).Equals(fileContent))
                 {
                     bret = true;
                 }

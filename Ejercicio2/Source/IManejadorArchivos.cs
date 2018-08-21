@@ -9,7 +9,7 @@ namespace Ejercicio2
     public interface IManejadorArchivos
     {
         bool writeFile(string filePath, string fileContent);
-        string readFile(string filePath);
+        string[] readFile(string filePath);
         bool checkFileExists(string filePath);
     }
 }
