@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Nosis.Framework.Datos">
+      <HintPath>..\..\LastExcercise\LastExcercise\Libs\Nosis.Framework.Datos.dll</HintPath>
+    </Reference>
+    <Reference Include="NS.Librerias">
+      <HintPath>D:\TFSSERV004\Assemblies\NS.Librerias\v2\NS.Librerias.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -83,6 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TextStreamer\TextStreamer.csproj">
+      <Project>{62347dda-0a37-4e89-97cd-412631aec522}</Project>
+      <Name>TextStreamer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
