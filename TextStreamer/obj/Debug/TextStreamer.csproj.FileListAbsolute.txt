@@ -2,3 +2,4 @@ C:\Users\mvallejo\Desktop\Visual Studio Projects\Ejercicio2\TextStreamer\bin\Deb
 C:\Users\mvallejo\Desktop\Visual Studio Projects\Ejercicio2\TextStreamer\bin\Debug\TextStreamer.pdb
 C:\Users\mvallejo\Desktop\Visual Studio Projects\Ejercicio2\TextStreamer\obj\Debug\TextStreamer.dll
 C:\Users\mvallejo\Desktop\Visual Studio Projects\Ejercicio2\TextStreamer\obj\Debug\TextStreamer.pdb
+C:\Users\mvallejo\Desktop\Visual Studio Projects\Ejercicio2\TextStreamer\obj\Debug\TextStreamer.csprojResolveAssemblyReference.cache

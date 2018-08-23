@@ -60,11 +60,10 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Source\Log.cs" />
-    <Compile Include="Source\Motor.cs" />
+    <Compile Include="Source\Administrador.cs" />
     <Compile Include="Source\Persona.cs" />
     <Compile Include="Source\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Source\IManejadorArchivos.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

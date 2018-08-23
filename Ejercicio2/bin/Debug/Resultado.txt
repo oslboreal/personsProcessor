@@ -1,0 +1,24 @@
+Fecha inicio del proceso:  23/10/2017 11:32:44
+Cantidad de registros procesados: 19
+Cantidad de registros exitosamente: 13
+Cantidad de registros procesados con error: 3
+Cantidad de registros repetidos: 3
+Tiempo total del proceso:  0.077 sec
+Fecha fin del proceso:  23/10/2017 11:32:44
+
+Fecha inicio del proceso:  22/01/2018 16:19:42
+Cantidad de registros procesados: 18
+Cantidad de registros exitosamente: 13
+Cantidad de registros procesados con error: 2
+Cantidad de registros repetidos: 3
+Tiempo total del proceso:  0.017 sec
+Fecha fin del proceso:  22/01/2018 16:19:42
+
+Fecha inicio del proceso:  30/01/2018 16:29:07
+Cantidad de registros procesados: 18
+Cantidad de registros exitosamente: 13
+Cantidad de registros procesados con error: 2
+Cantidad de registros repetidos: 3
+Tiempo total del proceso:  0.025 sec
+Fecha fin del proceso:  30/01/2018 16:29:07
+

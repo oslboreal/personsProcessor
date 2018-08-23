@@ -8,18 +8,12 @@ namespace Ejercicio2
 {
     public class Accion
     {
-        private static int instancia;
+        // Fields
         private string accion;
         private DateTime horarioAccion;
         private string usuario;
-
-        /// <summary>
-        /// Constructor de clase para inicializar campos de clase.
-        /// </summary>
-        static Accion()
-        {
-            Accion.instancia = 0; 
-        }
+        private static NS.Librerias.Diagnostico.Logger logAcciones = new NS.Librerias.Diagnostico.Logger("logAcciones");
+        private static Streamer.Text accionesHistorico = new Streamer.Text("historico.txt");
 
         /// <summary>
         /// Constructor de instancia para inicializar campos de instancia.
@@ -32,6 +26,12 @@ namespace Ejercicio2
             usuario = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
         }
 
+        public void grabarAccion()
+        {
+            //Registramos
+            Accion.accionesHistorico.writeLine(this.ToString());
+        }
+
         /// <summary>
         /// ToString() Override - Devuelve una cadena indicando los campos de la Acción.
         /// </summary>
@@ -39,14 +39,16 @@ namespace Ejercicio2
         public override string ToString()
         {
             StringBuilder aux = new StringBuilder();
-            if(usuario != null && accion != null && horarioAccion != null)
+            try
             {
                 aux.Append("USUARIO: " + this.usuario + " - " + "FECHA: " + this.horarioAccion.ToString() + " - " + "ACCION: " + this.accion);
-            }else
-            {
-                throw new Exception("Error intentando imprimir la Acción."); 
+                return aux.ToString();
             }
-            return aux.ToString();
+            catch (Exception e)
+            {
+                Accion.logAcciones.Error(e,"Error a la hora de mostrar el usuario.");
+                throw;
+            }
         }
     }
 }
